@@ -41,7 +41,7 @@ model.compile(optimizer='adam',
 
 # 4. Training the model
 print("Training the model...")
-model.fit(X_train, y_train, epochs=5, batch_size=64, validation_split=0.1)
+model.fit(X_train, y_train, epochs=10, batch_size=64, validation_split=0.1)
 
 # 5. Model valutation
 print("Model valutation...")
@@ -75,3 +75,4 @@ plot_predictions(X_test, y_test_classes, y_pred_classes)
 
 # Saving the model as .h5 file
 model.save("mnist_cnn_model.h5")
+print("Model saved as mnist_cnn_model.h5")
