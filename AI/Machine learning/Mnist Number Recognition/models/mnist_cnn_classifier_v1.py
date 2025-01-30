@@ -40,13 +40,13 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # 4. Training the model
-print("Addestramento del modello...")
+print("Training the model...")
 model.fit(X_train, y_train, epochs=5, batch_size=64, validation_split=0.1)
 
 # 5. Model valutation
-print("Valutazione del modello...")
+print("Model valutation...")
 test_loss, test_accuracy = model.evaluate(X_test, y_test)
-print(f"Accuracy sul test set: {test_accuracy * 100:.2f}%")
+print(f"Test set accuracy: {test_accuracy * 100:.2f}%")
 
 # Test set predictions
 y_pred = model.predict(X_test)
@@ -57,7 +57,7 @@ y_test_classes = np.argmax(y_test, axis=1)
 cm = confusion_matrix(y_test_classes, y_pred_classes)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm)
 disp.plot(cmap=plt.cm.Blues)
-plt.title("Matrice di Confusione")
+plt.title("Confusion Matrix")
 plt.show()
 
 # 6. Display some predictions
