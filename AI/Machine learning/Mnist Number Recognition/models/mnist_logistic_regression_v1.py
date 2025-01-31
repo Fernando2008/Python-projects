@@ -1,3 +1,14 @@
+'''
+    This script trains a Logistic Regression model to recognize handwritten digits from the MNIST dataset. 
+    Each image is flattened into a 1D vector, and the model predicts digits (0-9) based on these features. 
+    It serves as a simple baseline for digit recognition tasks.
+
+    author: Fernando Togna
+    creation: Junuary 2025
+    last update: Junuary 2025
+    email: fernandotogna2@gmail.com
+'''
+
 import random
 import numpy as np
 import matplotlib.pyplot as plt
