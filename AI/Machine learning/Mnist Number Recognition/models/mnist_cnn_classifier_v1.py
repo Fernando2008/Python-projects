@@ -1,3 +1,13 @@
+'''
+    This script trains a Convolutional Neural Network (CNN) for handwritten digit recognition using the MNIST dataset. 
+    The model processes images as 2D inputs, leveraging spatial patterns for improved accuracy in recognizing digits (0-9).
+
+    author: Fernando Togna
+    creation: Junuary 2025
+    last update: Junuary 2025
+    email: fernandotogna2@gmail.com
+'''
+
 import random
 import numpy as np
 import matplotlib.pyplot as plt
